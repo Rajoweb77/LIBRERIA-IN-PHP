@@ -59,6 +59,6 @@ function deleteBook($visualizza)
 {
     if (isset($_SESSION['libri'][$visualizza])) {
         unset($_SESSION['libri'][$visualizza]);
-        // $_SESSION['libri'] = array_values($_SESSION['libri']); // riordina gli indici
+        $_SESSION['libri'] = array_values($_SESSION['libri']); // riordina gli indici
     }
 }
